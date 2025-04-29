@@ -1,0 +1,27 @@
+
+<head>
+    <title>contador de cliques com reset</title>
+</head>
+
+<body>
+    <p>Cliques: <span id="contador">0</span></p>
+    <button onclick="contar()">contar</button> 
+    <button onclick="resetar()">resetar</button>
+
+    <script>
+    let cliques = 0;
+
+function contar() {
+  cliques++;
+  document.getElementById("contador").innerHTML = cliques;
+}
+  function resetar() {
+  cliques=0;
+  document.getElementById("contador").innerHTML = cliques;
+}     
+    </script>
+</body>
+</html>
+
+<!--como fazer um botão para contar cliques-->
+<!--qual funçao eu uso para resetar -->
