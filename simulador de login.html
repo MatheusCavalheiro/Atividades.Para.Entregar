@@ -1,0 +1,23 @@
+<html>
+    
+<body>
+
+<input id="user" placeholder="escreva se email">
+<input id="pass" type="password" placeholder="digite sua senha">
+<button onclick="logar()">Login</button>
+<p id="msg"></p>
+
+<script>
+  function logar() {
+    if (user.value === "matheuscavalheiro2019@gmail.com" && pass.value === "1234") {
+      msg.textContent = "sucesso!";
+    } else {
+      msg.textContent = "erro!";
+    }
+  }
+</script>
+
+</body>
+</html>
+<!-- qual função eu uso para aparecer uma menssagem dpois de fazer o login -->
+<!-- qual função eu uso para validar uma constante -->
