@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <tittle>escreva seu nome</tittle>
+    </head>
+    <body> 
+
+        <p id = 'saudação'></p>
+        <input type="text" id="Cnome">
+        <button onclick="saudacao()">confirmar</button>
+
+ 
+        <script>
+          
+            function saudacao() {
+                const nome = document.getElementById('Cnome').value
+                const hora = new Date().getHours()
+                let mensagem =""
+
+                if (hora >=5  && hora < 12 ) {
+                    mensagem = "bom dia"}
+                else if (hora >=12 && hora < 18) 
+                    mensagem = "boa tarde"
+                else {
+                    mensagem ='boa noite'
+                }
+                const horaatual = new Date(). toLocaleTimeString()
+                document.getElementById('saudação').innerHTML = mensagem + ", " + nome + "! O horário atual é:" + horaatual + "."
+            }
+        </script>
+    
+    </body>
+</html>
+
+<!-- como eu faço para adicionar o horário atual no código -->
+
